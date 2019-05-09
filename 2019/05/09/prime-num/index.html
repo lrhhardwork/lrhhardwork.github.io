@@ -96,16 +96,17 @@
 
 
 
-  <meta name="description" content="编程 物理">
-<meta property="og:type" content="website">
-<meta property="og:title" content="胡乱写写">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="获得用户输入数字N，计算并输出从N开始的5个质数，单行输出，质数间用逗号,分割。 注意：用户输入的数字N可能是浮点数，都是正数；最后一个输出后不用逗号。 12345678910111213141516171819def prime(m):    for i in range(2,m):        if m % i == 0:            return False    return">
+<meta property="og:type" content="article">
+<meta property="og:title" content="prime_num">
+<meta property="og:url" content="http://yoursite.com/2019/05/09/prime-num/index.html">
 <meta property="og:site_name" content="胡乱写写">
-<meta property="og:description" content="编程 物理">
+<meta property="og:description" content="获得用户输入数字N，计算并输出从N开始的5个质数，单行输出，质数间用逗号,分割。 注意：用户输入的数字N可能是浮点数，都是正数；最后一个输出后不用逗号。 12345678910111213141516171819def prime(m):    for i in range(2,m):        if m % i == 0:            return False    return">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2019-05-09T15:53:42.094Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="胡乱写写">
-<meta name="twitter:description" content="编程 物理">
+<meta name="twitter:title" content="prime_num">
+<meta name="twitter:description" content="获得用户输入数字N，计算并输出从N开始的5个质数，单行输出，质数间用逗号,分割。 注意：用户输入的数字N可能是浮点数，都是正数；最后一个输出后不用逗号。 12345678910111213141516171819def prime(m):    for i in range(2,m):        if m % i == 0:            return False    return">
 
 
 
@@ -113,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/09/prime-num/">
 
 
 
@@ -123,7 +124,7 @@
   };
 </script>
 
-  <title>胡乱写写</title>
+  <title>prime_num | 胡乱写写</title>
   
 
 
@@ -171,8 +172,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,7 +214,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -231,7 +231,7 @@
         
         
           
-          <li class="menu-item menu-item-about menu-item-active">
+          <li class="menu-item menu-item-about">
 
     
     
@@ -248,7 +248,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -265,7 +265,7 @@
         
         
           
-          <li class="menu-item menu-item-schedule menu-item-active">
+          <li class="menu-item menu-item-schedule">
 
     
     
@@ -310,9 +310,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -344,10 +344,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/09/prime-num/" class="post-title-link" itemprop="url">prime_num</a>
+          <h1 class="post-title" itemprop="name headline">prime_num
+
               
             
           </h1>
@@ -411,13 +409,9 @@
       
 
       
-        
-          
-            <p>获得用户输入数字N，计算并输出从N开始的5个质数，单行输出，质数间用逗号,分割。</p>
+        <p>获得用户输入数字N，计算并输出从N开始的5个质数，单行输出，质数间用逗号,分割。</p>
 <p>注意：用户输入的数字N可能是浮点数，都是正数；最后一个输出后不用逗号。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">def prime(m):</span><br><span class="line">    for i in range(2,m):</span><br><span class="line">        if m % i == 0:</span><br><span class="line">            return False</span><br><span class="line">    return True</span><br><span class="line"></span><br><span class="line">n = eval(input())</span><br><span class="line">n_ = int(n)</span><br><span class="line">n_ = n_+1 if n_ &lt; n else n_</span><br><span class="line">count = 5</span><br><span class="line"></span><br><span class="line">while count &gt; 0:</span><br><span class="line">    if prime(n_):</span><br><span class="line">        if count &gt; 1:</span><br><span class="line">            print(n_, end=&quot;,&quot;)</span><br><span class="line">        else:</span><br><span class="line">            print(n_, end=&quot;&quot;)</span><br><span class="line">        count -= 1 </span><br><span class="line">    n_ += 1</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
 
@@ -440,167 +434,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/08/language/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bluebone">
-      <meta itemprop="description" content="编程 物理">
-      <meta itemprop="image" content="http://lrh-1.oss-cn-qingdao.aliyuncs.com/WechatIMG2.jpeg#/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡乱写写">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/08/language/" class="post-title-link" itemprop="url">langugae</a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2019/05/08/language/" rel="next" title="langugae">
+                <i class="fa fa-chevron-left"></i> langugae
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-05-08 21:46:59" itemprop="dateCreated datePublished" datetime="2019-05-08T21:46:59+08:00">2019-05-08</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-09 11:31:49" itemprop="dateModified" datetime="2019-05-09T11:31:49+08:00">2019-05-09</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>计算机百科全书中说，任何一种编程语言都可以从以下几个方面去理解<br><img src="https://lrh-1.oss-cn-qingdao.aliyuncs.com/如何学习一门语言.png" alt="如何学习一门语言"></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -610,175 +465,15 @@
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/07/newpapername/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bluebone">
-      <meta itemprop="description" content="编程 物理">
-      <meta itemprop="image" content="http://lrh-1.oss-cn-qingdao.aliyuncs.com/WechatIMG2.jpeg#/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="胡乱写写">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/07/newpapername/" class="post-title-link" itemprop="url">我的blog</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-05-07 21:56:57" itemprop="dateCreated datePublished" datetime="2019-05-07T21:56:57+08:00">2019-05-07</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-05-08 21:32:46" itemprop="dateModified" datetime="2019-05-08T21:32:46+08:00">2019-05-08</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>#这个blog的由来</p>
-<h3 id="为什么写这个blog"><a href="#为什么写这个blog" class="headerlink" title="为什么写这个blog"></a>为什么写这个blog</h3><pre><code>1.记录学习进度，分享学习成果
-2.发表个人心得，找到共同爱好的人
-</code></pre><h3 id="这个blog的建立过程"><a href="#这个blog的建立过程" class="headerlink" title="这个blog的建立过程"></a>这个blog的建立过程</h3><pre><code>以后会专门写一篇文章介绍先欠着～～
-</code></pre><h3 id="主要分享的内容"><a href="#主要分享的内容" class="headerlink" title="主要分享的内容"></a>主要分享的内容</h3><pre><code>1.自学编程方面，python，计算导论，算法，c++
-2.物理学方面，基础物理学，天体物理学
-</code></pre><p>### </p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -976,6 +671,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
 
   
 
@@ -991,6 +690,8 @@
 
   
 
+
+  
 
 
   
